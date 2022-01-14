@@ -1,0 +1,54 @@
+body, html{
+    background-color: #bea8d3;
+    height: 100%;
+}
+
+
+
+.container{
+    
+    background-image: url('clockimage.png');
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: 40% 75%;
+    position: relative;
+    background-position: center;
+}
+
+
+
+
+.hour{
+    position: absolute;
+    width: 10%;
+    top: 45%;
+    left: 49.7%;
+    transform-origin: left;
+    animation: hour 10s infinite linear;
+}
+
+.minute{
+    position: absolute;
+    width: 13%;
+    top: 43.5%;
+    left: 49.9%;
+    transform: rotate(-90deg);
+    transform-origin: left;
+    animation: minute 10s infinite linear;
+}   
+
+
+
+@keyframes minute{
+    100%{
+        transform: rotate(360deg);
+    }
+    
+}
+
+
+@keyframes hour{
+    100%{
+        transform: rotate(30deg);
+    }
+}

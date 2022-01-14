@@ -1,0 +1,26 @@
+body,html{
+    
+    height: 100%;
+}
+
+.background{
+    background-image: url('nyc.jpg');
+    height: 100%;
+    background-repeat: no-repeat;  
+    background-size: cover;
+    position: relative;
+    
+}
+
+.box{
+    /* display: flex; */
+    position: absolute;
+    border: 2px solid red;
+    color: white;
+    text-align: center;
+    background-color: rgba(146,143,143,0.5);
+    width: 50%;
+    bottom : 2%;
+    right: 2%;
+    font-size: 20px;
+}
