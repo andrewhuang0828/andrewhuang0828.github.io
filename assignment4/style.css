@@ -1,0 +1,155 @@
+body, html{
+    height: 100%;
+}
+
+
+.container{
+    
+    margin: auto;
+    width: 90%;
+    text-align: center;
+    height: 80%;
+    margin-top: 2%;
+}
+
+
+.main{
+    display: inline-block;
+    border: 2px solid red;
+    width: 30%;
+    margin-right: 5%;
+    margin-left: 5%;
+    height: 90%;
+    
+}
+
+.mainimg{
+    margin-top: 5%;
+    padding-bottom: 5%;
+    width: 70%;
+    height: 50%;
+
+}
+
+
+.btn{
+    color: white;
+    border: 2px solid orange;
+    background-color: orange;
+    border-radius: 10px;
+    width: 30%;
+    margin: auto;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    
+
+}
+
+a{
+    text-decoration: none;
+}
+
+
+.modalA{
+    
+    width: 60%;
+    background-color: orange;
+    margin: auto;
+}
+
+.modalB{
+    
+    width: 60%;
+    background-color: lightblue;
+    margin: auto;
+}
+
+
+h1{
+    padding-left: 1%;
+    border: 1px solid black;
+    background-color: pink;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    margin-top: 0%;
+    color: white;
+}
+
+h2{
+    text-align: center;
+}
+
+
+.c1A{
+    width: 40%;
+    margin: 5% 5% 5% 5%;
+}
+
+.c2A{
+    width: 30%;
+    margin: 5% 5% 5% 5%;
+}
+
+.close{
+    float: right;
+    border: 2px solid white;
+    padding: .5%;
+    background-color: white;
+}
+
+.mText{
+    
+    width: 90%;
+    background-color: pink;
+    font-size: 20px;
+    padding: 2%;
+    margin-top: 4%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.mymodal1{
+    
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(44, 74, 226, 0.75);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+    
+}
+
+
+
+.mymodal2{
+    
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(63, 149, 37, 0.75);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+    
+}
+
+
+.mymodal1:target{
+    visibility: visible;
+    opacity: 1;
+    pointer-events: auto;
+}
+
+
+.mymodal2:target{
+    visibility: visible;
+    opacity: 1;
+    pointer-events: auto;
+}
+
