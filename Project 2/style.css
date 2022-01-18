@@ -1,0 +1,390 @@
+body{
+  background-color: lightgoldenrodyellow;
+}
+
+.headbox{
+    width:100%;
+    height: 125px;
+   
+    box-sizing: border-box;
+    background-color: beige;
+    
+  }
+  
+  
+  .logobox{
+    width:10%;
+    border: 4px solid olivedrab;
+    border-radius: 20px;
+    height:100%;
+    box-sizing: border-box;
+    
+    float: left;
+    animation: logoanim 2s infinite;
+    text-align: center;
+    
+    
+  }
+  
+  @keyframes logoanim {
+    0% {transform: scale(0);}
+    100% {transform: scale(1);}
+  }
+  
+  .logobox img{
+    max-width: 100%;
+    height: 100%;
+  }
+  
+  .title{
+    width:74%;
+    
+    height:34%;
+    float: left;
+    margin: 1% 1%;
+    animation: titlefade 2s infinite;
+    position: relative;
+    font-family:'Monotype Corsiva','Apple Chancery','ITC Zapf Chancery','URW Chancery L',cursive;
+
+    font-size: 1.5vw;
+    
+    text-size-adjust: auto;
+  }
+
+  
+  
+  
+  .subtitle{
+    position: relative;
+    width:74%;
+    
+    height:26%;
+    box-sizing: border-box;
+    float: left;
+    margin-left: 1%;
+    margin-right: 1%;
+    animation: stitlefade 2s infinite;
+    margin-top: -.5%;
+    font-size: 1vw;
+  }
+
+
+@keyframes titlefade{
+  0%{opacity: 0; bottom:30%;}
+  
+  100%{opacity: 1; bottom:0%;}
+}
+
+@keyframes stitlefade{
+  0%{opacity: 0; top:30%;}
+  100%{opacity: 1;top:0%;}
+}
+
+.stage{
+  width: 100%;
+  
+  margin: auto;
+  overflow: hidden;
+  height:70px; 
+  text-align: center;
+}
+    
+    
+.slidewrap {
+  width:400%;
+  height:100%;
+  animation: slideshow 7s linear infinite;
+  animation-direction: alternate;
+    
+}
+    
+    
+.slidewrap div {
+    float:left;
+    width:25%;
+    height:100%;
+}
+    
+.slidewrap >h1{
+    
+    text-align: center;
+}
+    
+    
+@keyframes slideshow {
+    0% {margin-left: 0%;}
+    20% {margin-left: 0%;}
+    40% {margin-left: -100%}
+    60%{margin-left: -100%}
+    80%{margin-left: -200%}
+    100% {margin-left: -200%}
+}
+    
+      
+.s1 {background-color: lightgrey;}
+    
+.s2 {background-color: lightsteelblue}
+    
+.s3 {background-color: lightslategrey}
+    
+
+
+.bigbox{
+  width: 100%;
+ 
+}
+
+.bigimgbox{
+  width: 100%;
+  height: 1000px;
+}
+
+.bigimg{
+  width: 100%;
+  height: 100%;
+}
+
+.biginfo{
+  border: 2px solid white;
+  background-color: lightgray;
+  position: relative;
+  text-align: center;  
+  width: 40%;
+  bottom:500px;
+  left: 2%;
+  font-size: 1vw;
+}
+
+
+
+.smallbox1{
+  
+  
+  width: 40%;
+  margin-left: 5%;
+  display: inline-block;
+  position: relative;
+  
+}
+
+.smallbox1 >img{
+  width: 100%;
+  opacity: .5;
+}
+
+.sbinfo{
+  position: absolute;
+  color: white;
+  border: 2px solid lightgreen;
+  background-color: rgba(0,0,0,0);;
+  text-align: center;  
+  width: 60%;
+  top: 15%;
+  left: 2%;
+  font-size: 1vw;
+  padding: 3% 3% 5% 3%;
+}
+
+
+.smallbox2{
+  
+  width: 40%;
+  display: inline-block;
+  margin-left: 10%;
+  padding-top: 29%;
+  position: relative;
+  background-image: linear-gradient(to bottom right, lightgray, thistle);}
+
+
+.sb2info{
+  position: absolute;
+  top: 20%;
+  left: 5%;
+  font-size: 1vw;
+  color: green;
+}
+
+.grid1{
+  text-align: center;
+  margin-top: 2%;
+}
+
+
+
+.g1, .g2 , .g3{
+
+  width: 30%;
+  display: inline-block;
+}
+
+.g1 > img{
+  width: 50%;
+  height: auto;
+}
+.g2 > img{
+  width: 50%;
+  height: auto;
+}
+.g3 > img{
+  width: 50%;
+  height: auto;
+}
+
+
+.modalA{
+  width: 30%;
+  margin: auto;
+  background-color: white;
+  position: relative;
+  top: 5%;
+}
+
+.modalB{
+  
+  width: 60%;
+  background-color: lightblue;
+  margin: auto;
+}
+
+.bag{
+  margin-left: 12.5%;
+}
+
+.line{
+  width: 75%;
+  margin: auto;
+  border: 2px solid lightgray;
+}
+
+
+
+.close{
+  float: right;
+  
+  padding: 1%;
+  background-color: lightgray;
+}
+
+.middle{
+  
+  position: relative;
+  padding-bottom: 5%;
+}
+
+.mimg{
+  margin-top: 4%;
+  margin-left: 10%;
+  
+  width: 40%;
+  display: inline-block;
+}
+
+.mimg > img{
+  width: 70%;
+  
+}
+
+.mtext{
+  position: absolute;
+  top: 14%;
+  font-size: .8vw;
+  width: 40%;
+  display: inline-block;
+}
+
+.end{
+  background-color: lightgray;
+  margin-top: 5%;
+  padding-bottom: 5%;
+}
+
+.desc{
+  margin-left: 12.5%;
+  margin-right: 12.5%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+
+.eline{
+  width: 75%;
+  border: 2px solid white;
+  margin: auto;
+
+}
+
+
+ .mymodal1{
+  
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(218, 218, 218, 0.5);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+  
+}
+
+
+.mymodal1:target{
+  visibility: visible;
+  opacity: 1;
+  pointer-events: auto;
+}
+
+
+.add{
+  
+  color: white;
+  background-color: black;
+  padding: 2%;
+  text-decoration: none;
+}
+
+.footer{
+  margin-top: 3%;
+  background-color: black;
+  color: white;
+  overflow: hidden;
+}
+
+.top{
+  
+  text-align: center;
+}
+
+
+.help,.account,.sub,.member{
+  padding-top: 2%;
+  width: 20%;
+  display: inline-block;
+  font-size: 20px;
+}
+
+.fline{
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  margin-top: 3%;
+  margin-bottom: 3%;
+  border: 1px solid white;
+}
+
+
+
+.c{
+  width: 30%;
+  float: right;
+
+}
+.social > img{
+  width: 10%;
+}
+
+
+.e{
+  margin-left: 10%;
+  font-size: .8vw;
+}
