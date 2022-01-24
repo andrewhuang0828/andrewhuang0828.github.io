@@ -21,7 +21,7 @@ function userGuess(){
     var node = document.createElement("LI");
     var textnode = document.createTextNode(document.getElementById("guess").value); 
     node.appendChild(textnode); 
-
+    
     if (g == secretNum){
         
         correct();
@@ -36,6 +36,9 @@ function userGuess(){
         score -= 1;
         document.getElementById("score").textContent = `Score : ${score}`;
         document.getElementById("list").appendChild(node);
+        if(score == 0){
+            gameOver();
+        }
     }
 
     else if (g > secretNum){
@@ -43,6 +46,9 @@ function userGuess(){
         score -= 1;
         document.getElementById("score").textContent = `Score : ${score}`;
         document.getElementById("list").appendChild(node);
+        if(score == 0){
+            gameOver();
+        }
     }
     
     else{
@@ -62,6 +68,8 @@ function reset(){
     document.getElementById("btn").style.opacity = 1;
     document.getElementById("rBtn").style.opacity = 0;
     document.getElementById("hint").style.opacity = 1;
+    document.getElementById("ss").style.opacity = 1;
+    document.getElementById("rr").style.opacity = 1;
     document.getElementById("hint").textContent = "Guess a Number!";
     document.getElementById("a").textContent = "";
     document.getElementById("b").textContent = ``;
@@ -88,5 +96,23 @@ function correct(){
     document.getElementById("c").textContent = `Your Score: ${score}`;
     document.getElementById("d").textContent = `Best Score: ${highScore}`;
     document.getElementById("rBtn").disabled = false;
+    document.getElementById("ss").style.opacity = 0;
+    document.getElementById("rr").style.opacity = 0;
 }
 
+
+
+function gameOver(){
+    document.getElementById("think").src = "img/over.jpg";
+    document.getElementById("guess").style.opacity = 0;
+    document.getElementById("btn").style.opacity = 0;
+    document.getElementById("rBtn").style.opacity = 1;
+    document.getElementById("hint").style.opacity = 0;
+    document.getElementById("rr").style.opacity = 0;
+    document.getElementById("rBtn").disabled = false;
+    document.getElementById("a").textContent = "Game Over!";
+    document.getElementById("b").textContent = "Unfortunately You Lost ";
+    document.getElementById("c").textContent = "Don't give up and try again. You might win next time";
+    document.getElementById("d").textContent = `My number was : ${secretNum}`;
+
+}
