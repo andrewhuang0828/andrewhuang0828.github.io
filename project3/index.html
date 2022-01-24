@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="title">
+    <h1>Guessing Game</h1>
+    <h2>Guess a Number Between 1 and 100</h2>
+    </div>
+
+
+
+    <div class="bigbox">
+        <div class="score">
+            <div id = "score"></div>
+            <div id = "highscore"></div>
+        </div>
+
+
+        <div class="reset" onclick="reset()">
+            <button id = "resetbtn" >Reset</button>
+        </div>
+
+        <div class="smallbox" id = "sb">
+            <img class="think" id ="think" src="img/thinking.jpg" alt="">
+            <form name = "input" onsubmit="return false;">
+                <label for="guess"></label>
+                <input type="text" id="guess" placeholder = "type here!"> <br>
+                <input type="submit" id="btn" > 
+                     
+            </form>
+            
+            <!-- <button id="btn"  > Check</button> <br> -->
+            <button id="rBtn" > Play Again</button>
+            
+            <div id = "hint">Guess a Number!</div>
+            <div class="b">
+                <div id ="a"></div>
+                <div id ="b"></div>
+                <div id ="c"></div>
+                <div id ="d"></div>
+            </div>
+            <br>
+        </div>
+        <div class = "guesshistory">
+            <h3>Guess History</h3>
+            <ul id = "list">
+
+            </ul>
+        </div>
+
+        
+    </div>
+    
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
